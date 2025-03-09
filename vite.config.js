@@ -1,11 +1,13 @@
 import { defineConfig } from "vite";
 
-export default defineConfig({
+export default {
   base: "/DimonFarmGame/",
   build: {
-    target: "es2015",
     outDir: "dist",
-    assetsDir: "assets",
     emptyOutDir: true,
+    rollupOptions: {
+      external: ["crypto"],
+    },
   },
-});
+};
+ы;
