@@ -1,6 +1,5 @@
-export default {
-  root: "./",
-  server: {
-    open: true, // Автоматически открывает браузер при запуске
-  },
-};
+import { defineConfig } from "vite";
+
+export default defineConfig({
+  base: "/DimonFarmGame/", // Your GitHub repository name
+});
